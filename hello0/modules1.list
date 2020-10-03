@@ -1,0 +1,8 @@
+modaddr 0x002000000
+
+entry hello0
+  kernel fiasco -serial_esc
+  roottask moe --init=rom/hello0
+  module l4re
+  module ned
+  module hello0
