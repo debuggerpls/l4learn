@@ -1,0 +1,9 @@
+# source it, so no need to call the lengthy make
+
+G_FIASCO_DIR=/home/deividas/projects/l4re-base-20.08.0/src/fiasco/mybuild
+G_L4_DIR=/home/deividas/projects/l4re-base-20.08.0/src/l4/builddir
+
+function run_qemu()
+{
+  make -C $G_L4_DIR qemu E=$1 MODULES_LIST=$PWD/modules.list MODULE_SEARCH_PATH=$PWD:$G_FIASCO_DIR
+}
