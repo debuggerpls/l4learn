@@ -127,7 +127,7 @@ $ ls /path/to/snapshot/obj/l4/arm-rv-arm9/bin/arm_rv/l4f/myfirstprogram
 * explicit function parameters even for *void*
 * modules.list possible settings can be seen in src/l4/conf/modules.list
 * if using non-default MODULES_LIST, settings in Makeconf.boot are not used, therefore fiasco build dir needs to be added to MODULE_SEARCH_PATH
-* if using *roottask moe --init=rom/hello0* in modules.list, then it just prints hello message, MOE starts the hello0 binary. If using hello0.cfg, MOE starts NED, and NED loads the hello0.cfg file, which in turn runs hello0 binary
+* if using *roottask moe --init=rom/hello0* in modules.list, then it just prints hello message, MOE starts the hello0 binary. If using hello0.cfg, MOE starts NED, and NED loads the hello0.cfg file, which in turn runs hello0
 
 -----
 

@@ -1,0 +1,10 @@
+modaddr 0x002000000
+
+entry ned
+  kernel fiasco -serial_esc
+  roottask moe rom/ned.cfg 
+  module l4re
+  module ned
+  module ned.cfg
+  module ned-prompt
+  module hello
