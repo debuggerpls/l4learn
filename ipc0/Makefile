@@ -5,7 +5,8 @@ PKGDIR ?= .
 L4DIR ?= ${DIR_L4_SRC}
 O = ${DIR_L4_BUILD}
 
-TARGET = hello0
-SRC_C = main.c
+TARGET = ipc0_server ipc0_client
+SRC_CC_ipc0_server = server.cc
+SRC_CC_ipc0_client = client.cc
 
 include $(L4DIR)/mk/prog.mk

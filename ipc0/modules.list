@@ -1,0 +1,10 @@
+modaddr 0x002000000
+
+entry ipc0
+  kernel fiasco -serial_esc
+  roottask moe rom/ipc.cfg
+  module l4re
+  module ned
+  module ipc.cfg
+  module ipc0_server
+  module ipc0_client

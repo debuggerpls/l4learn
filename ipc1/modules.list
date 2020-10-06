@@ -1,0 +1,5 @@
+entry ipc1
+  kernel fiasco -serial_esc
+  roottask moe --init=rom/ipc1
+  module l4re
+  module ipc1

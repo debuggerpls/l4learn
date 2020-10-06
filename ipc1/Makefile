@@ -5,7 +5,9 @@ PKGDIR ?= .
 L4DIR ?= ${DIR_L4_SRC}
 O = ${DIR_L4_BUILD}
 
-TARGET = hello0
-SRC_C = main.c
+TARGET = ipc1
+SRC_CC_ipc1 = main.cc
+REQUIRES_LIBS = libstdc++ libpthread
+DEPENDS_PKGS  = $(REQUIRES_LIBS)
 
 include $(L4DIR)/mk/prog.mk

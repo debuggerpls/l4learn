@@ -1,0 +1,5 @@
+entry hello2
+  kernel fiasco -serial_esc
+  roottask moe --init=rom/hello2
+  module l4re
+  module hello2

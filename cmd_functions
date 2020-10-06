@@ -1,7 +1,11 @@
 # source it, so no need to call the lengthy make
 
-G_FIASCO_DIR=/home/deividas/projects/l4re-base-20.08.0/src/fiasco/mybuild
-G_L4_DIR=/home/deividas/projects/l4re-base-20.08.0/src/l4/builddir
+# include paths to l4
+# TODO: edit inc_paths so it points to correct dirs
+. inc_paths
+
+G_FIASCO_DIR=$DIR_FIASCO_BUILD
+G_L4_DIR=$DIR_L4_BUILD
 
 function run_qemu()
 {
@@ -11,5 +15,5 @@ function run_qemu()
 function build_qemu()
 {
   make -C $G_L4_DIR grub2iso E=$1 MODULES_LIST=$PWD/modules.list MODULE_SEARCH_PATH=$PWD:$G_FIASCO_DIR
-  qemu-system-i386 -cdrom $G_L4_DIR/images/$1.iso -serial stdio
+  qemu-system-$WANTED_QEMU -cdrom $G_L4_DIR/images/$1.iso -serial stdio
 }

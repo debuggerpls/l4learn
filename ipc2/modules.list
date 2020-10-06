@@ -1,0 +1,8 @@
+entry ipc2
+  kernel fiasco -serial_esc
+  roottask moe rom/ipc2.cfg
+  module l4re
+  module ned
+  module ipc2.cfg
+  module ipc2_server
+  module ipc2_client
