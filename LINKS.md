@@ -19,6 +19,9 @@
   * VL/LAB: Microkernel Construction [link][10]
   * VL/LAB: Real-Time Systems [link][11]
 
+* TU Dresden Wiki [link][23]
+  * Client-server app with explanation [link][24]
+
 * L4 uKernel family [link][12]
 
 * L4Linux [link][13]
@@ -52,3 +55,5 @@
 [20]: https://github.com/kernkonzept
 [21]: https://www.kernkonzept.com/
 [22]: https://blog.kernkonzept.com/
+[23]: https://wiki.tudos.org/Main_Page
+[24]: https://wiki.tudos.org/L4Re_simple_client_server_example

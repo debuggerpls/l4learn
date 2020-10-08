@@ -1,0 +1,8 @@
+entry clnt_srv
+  kernel fiasco -serial_esc
+  roottask moe rom/cs.cfg
+  module l4re
+  module ned
+  module cs.cfg
+  module cs_c
+  module cs_s

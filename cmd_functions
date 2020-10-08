@@ -1,8 +1,8 @@
 # source it, so no need to call the lengthy make
 
 # include paths to l4
-# TODO: edit inc_paths so it points to correct dirs
-. inc_paths
+. used_paths
+
 
 G_FIASCO_DIR=$DIR_FIASCO_BUILD
 G_L4_DIR=$DIR_L4_BUILD

@@ -1,7 +1,0 @@
-# paths to L4 used by cmd_functions
-
-WANTED_QEMU=x86_64
-DIR_L4_SRC=/home/puplauskas/code/l4re-base-20.08.0/src/l4
-DIR_L4_BUILD=/home/puplauskas/code/l4re-base-20.08.0/obj/l4/amd64
-DIR_FIASCO_SRC=/home/puplauskas/code/l4re-base-20.08.0/src/fiasco
-DIR_FIASCO_BUILD=/home/puplauskas/code/l4re-base-20.08.0/obj/fiasco/amd64
